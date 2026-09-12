@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abuzar Ghaffari - Full Stack Web Developer portfolio. PHP, MySQL, React, Next.js and modern web development." />
+  <meta name="theme-color" content="#080b12" />
+  <title>Shaheen | Full Stack Web Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo" aria-label="Home">
+       <img src="assets/images/logo_img/logo_1.png" alt="Logo">
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+         <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="btn btn-sm btn-outline">Hire Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            Available for freelance & full-time work
+          </div>
+
+          <h1>
+            I build <span class="gradient-text">fast, modern</span><br />
+            web experiences.
+          </h1>
+
+          <p class="hero-intro">
+            Hi, I’m <strong>Nimra Shaheen</strong> — a Full Stack Web Developer focused on
+            clean interfaces, scalable backends and conversion-friendly digital products.
+          </p>
+
+          <div class="typing-row">
+            <span>I work with</span>
+            <span class="typing" id="typing"></span>
+            <span class="typing-caret">|</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View My Work
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Let’s Talk</a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>20+</strong>
+              <span>Projects Built</span>
+            </div>
+            <div>
+              <strong>10+</strong>
+              <span>Technologies</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Responsive UI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="profile-shell">
+            <div class="profile-ring"></div>
+            <div class="profile-card">
+              <div class="profile-top">
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+              </div>
+
+              <div class="profile-body">
+                <div class="avatar"><img src="assets/images/logo_img/logo_2.png" alt="Logo"></div>
+                <p class="mini-label">FULL STACK DEVELOPER</p>
+                <h2>Nimra Shaheen</h2>
+                <p>PHP · MySQL · JavaScript · React · Next.js</p>
+
+                <div class="code-card">
+                  <span><em>const</em> developer = {</span>
+                  <span>&nbsp;&nbsp;name: <b>"Nimra"</b>,</span>
+                  <span>&nbsp;&nbsp;passion: <b>"Building"</b>,</span>
+                  <span>&nbsp;&nbsp;status: <b>"Available"</b></span>
+                  <span>};</span>
+                </div>
+
+                <div class="social-row">
+                  <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+                  <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+                  <a href="mailto:your@email.com" aria-label="Email">@</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-chip chip-one">React</div>
+            <div class="floating-chip chip-two">PHP</div>
+            <div class="floating-chip chip-three">Next.js</div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="Scroll to about">
+        <span>Scroll</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">01 / About Me</span>
+          <h2>Turning ideas into <span class="gradient-text">working products.</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy glass reveal">
+            <p>
+              I’m a full stack web developer who enjoys building polished, practical and
+              high-performance websites. I work across the complete development cycle —
+              interface design, frontend development, backend logic, database structure and deployment.
+            </p>
+            <p>
+              My focus is simple: create digital experiences that look professional,
+              feel effortless to use and remain easy to maintain as the product grows.
+            </p>
+
+            <div class="about-points">
+              <div><span>✓</span> Responsive web development</div>
+              <div><span>✓</span> Admin panels & dashboards</div>
+              <div><span>✓</span> REST API integration</div>
+              <div><span>✓</span> Database design & optimization</div>
+            </div>
+          </div>
+
+          <div class="about-cards reveal reveal-delay">
+            <article class="mini-card">
+              <span class="card-number">01</span>
+              <h3>Frontend</h3>
+              <p>Clean, responsive interfaces with strong attention to spacing, interaction and usability.</p>
+            </article>
+            <article class="mini-card">
+              <span class="card-number">02</span>
+              <h3>Backend</h3>
+              <p>Secure PHP/Node-based backend logic, authentication, APIs and scalable application structure.</p>
+            </article>
+            <article class="mini-card">
+              <span class="card-number">03</span>
+              <h3>Database</h3>
+              <p>Reliable MySQL/MongoDB data models with practical CRUD workflows and admin management.</p>
+            </article>
+            <article class="mini-card">
+              <span class="card-number">04</span>
+              <h3>Delivery</h3>
+              <p>Production-ready responsive builds designed for performance, maintainability and growth.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <section class="skills-section" id="skills">
+    <div class="container">
+
+        <div class="skills-heading">
+            <span class="section-tag">MY EXPERTISE</span>
+
+            <h2>
+                Technical <span>Skills</span>
+            </h2>
+
+            <p>
+                Technologies and tools I use to build modern,
+                responsive and scalable web applications.
+            </p>
+        </div>
+
+        <div class="skills-grid">
+
+            <!-- HTML -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="devicon-html5-plain colored"></i>
+                </div>
+                <h3>HTML5</h3>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="devicon-css3-plain colored"></i>
+                </div>
+                <h3>CSS3</h3>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <h3>JavaScript</h3>
+            </div>
+
+            <!-- PHP -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="devicon-php-plain colored"></i>
+                </div>
+                <h3>PHP</h3>
+            </div>
+
+            <!-- MySQL -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="devicon-mysql-plain colored"></i>
+                </div>
+                <h3>MySQL</h3>
+            </div>
+
+            <!-- Bootstrap -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="devicon-bootstrap-plain colored"></i>
+                </div>
+                <h3>Bootstrap</h3>
+            </div>
+
+            <!-- Git -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="devicon-git-plain colored"></i>
+                </div>
+                <h3>Git</h3>
+            </div>
+
+            <!-- GitHub -->
+            <div class="skill-card">
+                <div class="skill-icon github-icon">
+                    <i class="devicon-github-original"></i>
+                </div>
+                <h3>GitHub</h3>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ==============================
+     PROFESSIONAL EDUCATION SECTION
+================================ -->
+<section class="education-section" id="education">
+
+    <div class="education-bg education-bg-one"></div>
+    <div class="education-bg education-bg-two"></div>
+
+    <div class="education-container">
+
+        <!-- Heading -->
+        <div class="education-heading education-reveal">
+
+            <span class="education-kicker">
+                03 / EDUCATION
+            </span>
+
+            <h2>
+                My academic
+                <span>journey.</span>
+            </h2>
+
+            <p>
+                A foundation of academic learning combined with practical
+                development experience and continuous technical growth.
+            </p>
+
+        </div>
+
+
+        <!-- Education Timeline -->
+        <div class="education-timeline">
+
+            <!-- ==========================
+                 EDUCATION ITEM 1
+            =========================== -->
+            <article class="education-item education-reveal">
+
+                <div class="education-marker">
+                    <span></span>
+                </div>
+
+                <div class="education-card">
+
+                    <div class="education-card-top">
+
+                        <div class="education-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M3 10L12 5L21 10L12 15L3 10Z"/>
+                                <path d="M7 12V16.5C9.7 19 14.3 19 17 16.5V12"/>
+                                <path d="M21 10V16"/>
+                            </svg>
+                        </div>
+
+                        <span class="education-year">
+                            2024 — 2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="education-card-content">
+
+                        <span class="education-level">
+                            BACHELOR'S DEGREE
+                        </span>
+
+                        <h3>
+                            Web Designing and Development
+                        </h3>
+
+                        <div class="education-institute">
+
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 21V10L12 4L20 10V21"/>
+                                <path d="M9 21V14H15V21"/>
+                            </svg>
+
+                            <span>
+                                Virtual University
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Focused on software development, programming,
+                            database systems, web technologies and modern
+                            application development.
+                        </p>
+
+                    </div>
+
+
+                    <div class="education-footer">
+
+                        <span>
+                            <i></i>
+                            Computer Science
+                        </span>
+
+                        <span>
+                            <i></i>
+                            Web Development
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+                 EDUCATION ITEM 2
+            =========================== -->
+            <article class="education-item education-reveal">
+
+                <div class="education-marker">
+                    <span></span>
+                </div>
+
+                <div class="education-card">
+
+                    <div class="education-card-top">
+
+                        <div class="education-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 5H20V19H4Z"/>
+                                <path d="M8 9H16"/>
+                                <path d="M8 13H14"/>
+                            </svg>
+                        </div>
+
+                        <span class="education-year">
+                            2022 — 2024
+                        </span>
+
+                    </div>
+
+
+                    <div class="education-card-content">
+
+                        <span class="education-level">
+                            INTERMEDIATE
+                        </span>
+
+                        <h3>
+                            FSC - [Pre-Medical]
+                        </h3>
+
+                        <div class="education-institute">
+
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 21V10L12 4L20 10V21"/>
+                                <path d="M9 21V14H15V21"/>
+                            </svg>
+
+                            <span>
+                                Govt Collage For Woman
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Developed a strong academic foundation in
+                            computing, analytical thinking and problem solving.
+                        </p>
+
+                    </div>
+
+
+                    <div class="education-footer">
+
+                        <span>
+                            <i></i>
+                            Computing
+                        </span>
+
+                        <span>
+                            <i></i>
+                            Problem Solving
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+                 EDUCATION ITEM 3
+            =========================== -->
+            <article class="education-item education-reveal">
+
+                <div class="education-marker">
+                    <span></span>
+                </div>
+
+                <div class="education-card">
+
+                    <div class="education-card-top">
+
+                        <div class="education-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M5 4H19V20H5Z"/>
+                                <path d="M9 8H15"/>
+                                <path d="M9 12H15"/>
+                                <path d="M9 16H13"/>
+                            </svg>
+                        </div>
+
+                        <span class="education-year">
+                            2020 — 2022
+                        </span>
+
+                    </div>
+
+
+                    <div class="education-card-content">
+
+                        <span class="education-level">
+                            SECONDARY EDUCATION
+                        </span>
+
+                        <h3>
+                           Matric Science
+                        </h3>
+
+                        <div class="education-institute">
+
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 21V10L12 4L20 10V21"/>
+                                <path d="M9 21V14H15V21"/>
+                            </svg>
+
+                            <span>
+                                Suffah Model High School
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Built the academic discipline and learning
+                            foundation that led toward technology and software
+                            development.
+                        </p>
+
+                    </div>
+
+
+                    <div class="education-footer">
+
+                        <span>
+                            <i></i>
+                            Academic Foundation
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">04 / Featured Work</span>
+          <h2>Selected <span class="gradient-text">projects.</span></h2>
+          <p>A few examples of web applications, business platforms and development work.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured reveal">
+            <div class="project-visual visual-one">
+              <div class="browser-bar"><i></i><i></i><i></i></div>
+              <div class="mock-dashboard">
+                <div class="mock-sidebar"></div>
+                <div class="mock-content">
+                  <span></span><span></span>
+                  <div class="mock-boxes"><b></b><b></b><b></b></div>
+                  <em></em><em></em><em></em>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>Marketplace</span><span>Full Stack</span></div>
+              <h3>Builder Wing Marketplace</h3>
+              <p>A structured marketplace platform with responsive UI, dynamic listings, management workflows and modern user experience.</p>
+              <div class="tech-list"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap</span></div>
+              <div class="project-links">
+                <a href="#" aria-label="Open live project">Live Preview ↗</a>
+                <a href="#" aria-label="Open source code">Source Code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-two">
+              <div class="app-window">
+                <div class="quote-line"></div>
+                <div class="quote-line short"></div>
+                <div class="quote-panel"></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>Insurance</span><span>Web App</span></div>
+              <h3>UK Car Insurance Platform</h3>
+              <p>Responsive quote and payment workflow with backend processing, customer data handling and admin-side tools.</p>
+              <div class="tech-list"><span>PHP</span><span>MySQL</span><span>Stripe</span></div>
+              <div class="project-links"><a href="#">Project Details ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-three">
+              <div class="app-window ecommerce">
+                <div class="product-pic"></div>
+                <div><span></span><span></span><b></b></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>E-commerce</span><span>Admin Panel</span></div>
+              <h3>Electronics Shop System</h3>
+              <p>Product, stock, user, role and permission management system built for a physical electronics business.</p>
+              <div class="tech-list"><span>PHP</span><span>MySQL</span><span>RBAC</span></div>
+              <div class="project-links"><a href="#">Project Details ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-four">
+              <div class="mobile-frame">
+                <span class="map-road r1"></span>
+                <span class="map-road r2"></span>
+                <span class="map-pin"></span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>Tracking</span><span>Mobile System</span></div>
+              <h3>Smart School Bus Tracking</h3>
+              <p>GPS-focused school transport system with parent, driver and admin workflows, ETA and pickup/drop-off tracking concepts.</p>
+              <div class="tech-list"><span>Android</span><span>GPS</span><span>Database</span></div>
+              <div class="project-links"><a href="#">Project Details ↗</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="section-kicker">05 / Process</span>
+          <h2>How I approach a <span class="gradient-text">new build.</span></h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-item reveal"><span>01</span><h3>Understand</h3><p>Clarify business goals, users, features and technical requirements.</p></div>
+          <div class="process-item reveal"><span>02</span><h3>Structure</h3><p>Plan pages, database flow, architecture and component hierarchy.</p></div>
+          <div class="process-item reveal"><span>03</span><h3>Build</h3><p>Develop responsive UI, backend logic and tested interactions.</p></div>
+          <div class="process-item reveal"><span>04</span><h3>Launch</h3><p>Optimize performance, test devices and prepare the project for production.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Font Awesome -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-left contact-reveal">
+
+      <div class="contact-label">
+        <span>06</span>
+        <i></i>
+        <span>CONTACT</span>
+      </div>
+
+      <h2 class="contact-title">
+        Have a project in mind?
+        <span>Let’s build it.</span>
+      </h2>
+
+      <p class="contact-description">
+        I’m open to freelance work, collaborations and full-time
+        opportunities. Send me a message and tell me what you’re working on.
+      </p>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+
+        <!-- Email -->
+        <a
+          href="mailto:yourname@gmail.com"
+          class="contact-info-row"
+        >
+          <div class="contact-info-left">
+            <span class="contact-info-icon">
+              <i class="fa-regular fa-envelope"></i>
+            </span>
+
+            <div>
+              <span class="contact-info-label">Email</span>
+              <strong>daughterofrehmatali001@gmail.com</strong>
+            </div>
+          </div>
+
+          <span class="contact-arrow">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+
+
+        <!-- Phone -->
+        <a
+          href="tel:+923001234567"
+          class="contact-info-row"
+        >
+          <div class="contact-info-left">
+            <span class="contact-info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+
+            <div>
+              <span class="contact-info-label">Phone</span>
+              <strong>+92 307 9449154</strong>
+            </div>
+          </div>
+
+          <span class="contact-arrow">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+
+
+        <!-- Location -->
+        <div class="contact-info-row contact-location">
+          <div class="contact-info-left">
+            <span class="contact-info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+
+            <div>
+              <span class="contact-info-label">Location</span>
+              <strong>Chunian, Pakistan</strong>
+            </div>
+          </div>
+
+          <span class="contact-status">
+            Available
+          </span>
+        </div>
+
+
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-info-row"
+        >
+          <div class="contact-info-left">
+            <span class="contact-info-icon linkedin-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </span>
+
+            <div>
+              <span class="contact-info-label">LinkedIn</span>
+              <strong>Connect with me</strong>
+            </div>
+          </div>
+
+          <span class="contact-arrow">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+
+
+        <!-- GitHub -->
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-info-row"
+        >
+          <div class="contact-info-left">
+            <span class="contact-info-icon github-icon">
+              <i class="fa-brands fa-github"></i>
+            </span>
+
+            <div>
+              <span class="contact-info-label">GitHub</span>
+              <strong>View my code</strong>
+            </div>
+          </div>
+
+          <span class="contact-arrow">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="contact-form-wrapper contact-reveal">
+
+      <div class="form-top">
+        <span class="form-small-title">GET IN TOUCH</span>
+
+        <span class="availability">
+          <i></i>
+          Available for work
+        </span>
+      </div>
+
+      <form
+        class="contact-form"
+        id="contactForm"
+        action="send-message.php"
+        method="POST"
+        novalidate
+      >
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label for="contactName">Your Name</label>
+
+            <div class="input-wrapper">
+              <i class="fa-regular fa-user"></i>
+
+              <input
+                type="text"
+                id="contactName"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <small class="form-error"></small>
+          </div>
+
+
+          <div class="form-group">
+            <label for="contactEmail">Your Email</label>
+
+            <div class="input-wrapper">
+              <i class="fa-regular fa-envelope"></i>
+
+              <input
+                type="email"
+                id="contactEmail"
+                name="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+
+            <small class="form-error"></small>
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+          <label for="contactPhone">
+            Phone Number
+            <span>Optional</span>
+          </label>
+
+          <div class="input-wrapper">
+            <i class="fa-solid fa-phone"></i>
+
+            <input
+              type="tel"
+              id="contactPhone"
+              name="phone"
+              placeholder="+92 300 1234567"
+            />
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label for="contactSubject">Subject</label>
+
+          <div class="input-wrapper">
+            <i class="fa-regular fa-folder-open"></i>
+
+            <input
+              type="text"
+              id="contactSubject"
+              name="subject"
+              placeholder="Website / Web App / Collaboration"
+              required
+            />
+          </div>
+
+          <small class="form-error"></small>
+        </div>
+
+
+        <div class="form-group">
+          <label for="contactMessage">Message</label>
+
+          <div class="textarea-wrapper">
+            <textarea
+              id="contactMessage"
+              name="message"
+              rows="6"
+              placeholder="Tell me about your project..."
+              required
+            ></textarea>
+
+            <span class="message-count">
+              <span id="messageCount">0</span>/1000
+            </span>
+          </div>
+
+          <small class="form-error"></small>
+        </div>
+
+
+        <button type="submit" class="contact-submit-btn">
+          <span>Send Message</span>
+
+          <span class="send-icon">
+            <i class="fa-regular fa-paper-plane"></i>
+          </span>
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Nimra Shaheen. Built with focus & clean code.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
